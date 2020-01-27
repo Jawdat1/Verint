@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  tasks:
+  - name: create S3 bucket
+    s3_bucket:
+      name: verintmyansiblebucket
+      #aws_access_key: xxxxxxx
+      #aws_secret_key: xxxxxxx
+      policy: "{{ lookup( 'file','my_bucket_policy.json' )}}"
+      state: present
+      region: us-east-1
+      versioning: no
+      tags:
+         name: verintmyansiblebucket
+         type: example

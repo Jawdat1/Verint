@@ -1,0 +1,8 @@
+ubuntu@ip-172-31-92-199:/etc/ansible/verint/AWS_Ansible/_8__verint$ docker ps -a
+CONTAINER ID        IMAGE                        COMMAND                  CREATED             STATUS              POR                            TS                                                 NAMES
+e97c2953f8f0        ansible/awx_task:9.1.1       "/tini -- /bin/sh -c…"   About an hour ago   Up About an hour    805                            2/tcp                                              awx_task
+c2749dc2791c        ansible/awx_web:9.1.1        "/tini -- /bin/sh -c…"   About an hour ago   Up About an hour    0.0                            .0.0:80->8052/tcp                                  awx_web
+d848ecd169ef        postgres:10                  "docker-entrypoint.s…"   About an hour ago   Up About an hour    543                            2/tcp                                              awx_postgres
+1f39f0a684c9        memcached:alpine             "docker-entrypoint.s…"   2 days ago          Up About an hour    112                            11/tcp                                             awx_memcached
+2b7e3e4f6792        ansible/awx_rabbitmq:3.7.4   "docker-entrypoint.s…"   2 days ago          Up About an hour    436                            9/tcp, 5671-5672/tcp, 15671-15672/tcp, 25672/tcp   awx_rabbitmq
+ubuntu@ip-172-31-92-199:/etc/ansible/verint/AWS_Ansible/_8__verint$

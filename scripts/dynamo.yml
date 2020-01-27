@@ -1,0 +1,22 @@
+---
+- hosts: localhost
+  tasks:
+  - name: create dynamo table
+    dynamodb_table:
+      name: Music
+      AttributeDefinitions:
+            - AttributeName: "id"
+              AttributeType: "S"
+            - AttributeName: "providerName"
+              AttributeType: "S"
+            - AttributeName: "productType"
+              AttributeType: "S"
+            - AttributeName: "language"
+              AttributeType: "S"
+            - AttributeName: "terms"
+              AttributeType: "L"
+      state: present
+      region: us-east-1
+      tags:
+         name: verintmyansibledynamo
+         type: example

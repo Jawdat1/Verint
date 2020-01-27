@@ -1,0 +1,5 @@
+
+http://ec2-3-92-217-207.compute-1.amazonaws.com/#/home
+
+admin_user=admin
+admin_password=password

@@ -1,0 +1,1 @@
+sudo tail -f /var/lib/docker/volumes/jenkins-data/_data/logs/tasks/jenkins.log > tailed.log

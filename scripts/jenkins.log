@@ -1,0 +1,11 @@
+Started all plugins
+Jan 27, 2020 3:52:53 PM INFO jenkins.InitReactorRunner$1 onAttained
+Augmented all extensions
+Jan 27, 2020 3:52:53 PM INFO jenkins.InitReactorRunner$1 onAttained
+Loaded all jobs
+Jan 27, 2020 3:52:53 PM INFO jenkins.InitReactorRunner$1 onAttained
+Completed initialization
+Jan 27, 2020 3:52:53 PM INFO hudson.model.UpdateCenter$CompleteBatchJob run
+Completed installation of 19 plugins in 7.3 sec
+Jan 27, 2020 3:54:30 PM INFO hudson.model.Run execute
+verint #1 main build action completed: SUCCESS

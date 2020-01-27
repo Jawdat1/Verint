@@ -1,0 +1,21 @@
+
+
+---
+
+- hosts: localhost
+  tasks:
+  - name: destroy rds_instance
+    rds_instance:
+      id: postgres-db-instance
+      state: absent
+      skip_final_snapshot: True
+      region: us-east-1  
+
+
+- hosts: localhost
+  tasks:
+  - name: destroy S3 bucket
+    s3_bucket:
+      name: verintmyansiblebucket
+      state: absent
+      force: yes

@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  tasks:
+  - name: create rds_instance
+    rds_instance:
+      engine: postgres
+      db_instance_identifier: postgres-db-instance
+      instance_type: db.t2.small
+      password: "postgres#@#$ff"
+      state: present
+      region: us-east-1
+      username: "postgressadmin"
+      allocated_storage: 10
+      tags:
+         name: verintmyansiblerds
+         type: postgres
